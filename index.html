@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Des-CONECTA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Des-CONECTA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('inicio')">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('reflexion')">Reflexión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('mindfulness')">Mindfulness</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('reto')">Reto 7 días</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('respiracion')">Respiración</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('escaneo')">Escaneo Corporal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('cotidiano')">Mindfulness Cotidiano</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div id="inicio" class="content-section inicio-bg">
+            <h2>Bienvenido a Des-CONECTA</h2>
+            <p>Frase del día:</p>
+            <blockquote id="frase-dia" class="blockquote text-primary"></blockquote>
+        </div>
+
+        <div id="reflexion" class="content-section d-none p-5 text-center reflexion-bg">
+            <!--<h2 class="text-white">Momentos de Reflexión</h2>-->
+        </div>
+
+        <div id="mindfulness" class="content-section d-none">
+            <h2>Mindfulness</h2>
+            <p>Aquí descubrirás cómo pequeñas prácticas de atención plena pueden ayudarte a reconectarte con el presente...</p>
+        </div>
+
+        <div id="reto" class="content-section d-none">
+            <h2>Reto de 7 días</h2>
+            <p id="reto-diario" class="fs-4 fw-bold text-primary"></p>
+            <button id="completar-reto" class="btn btn-success mt-3">
+                Marcar como completado hoy ✅
+            </button>
+        </div>
+
+        <div id="respiracion" class="content-section d-none">
+            <h2>Respiración Consciente</h2>
+            <ul class="nav nav-tabs" id="tabResp" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="opt1-tab" data-bs-toggle="tab" data-bs-target="#opt1" type="button" role="tab">Opción 1</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="opt2-tab" data-bs-toggle="tab" data-bs-target="#opt2" type="button" role="tab">Opción 2</button>
+                </li>
+            </ul>
+            <div class="tab-content mt-3">
+                <div class="tab-pane fade show active" id="opt1" role="tabpanel">
+                    <ul>
+                        <li>Siéntate con la espalda erguida y permite que tu rostro y hombros se relajen.</li>
+                        <li>Coloca tus manos sobre el abdomen y comienza a respirar.</li>
+                        <li>Inhala suavemente contando hasta 4 y exhala contando hasta 8, manteniendo un ritmo cómodo.</li>
+                        <li>Retoma una respiración natural y observa durante un minuto cómo te sientes.</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="opt2" role="tabpanel">
+                    <ul>
+                        <li>Observa el flujo del aire sin aferrarte a los pensamientos que surgen.</li>
+                        <li>Elige un lugar tranquilo y siéntate en una posición cómoda.</li>
+                        <li>Dirige tu atención al ritmo natural de la respiración.</li>
+                        <li>Si te distraes, regresa con amabilidad la atención a la respiración.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="escaneo" class="content-section d-none">
+            <h2>Escaneo Corporal</h2>
+            <p>Este ejercicio consiste en recorrer mentalmente tu cuerpo, prestando atención a las sensaciones físicas en cada parte...</p>
+        </div>
+
+        <div id="cotidiano" class="content-section d-none">
+            <h2>Mindfulness en lo Cotidiano</h2>
+            <p>Practica la atención plena en actividades simples del día a día...</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

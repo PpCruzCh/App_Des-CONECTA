@@ -1,0 +1,39 @@
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    background-color: #6a5acd !important;
+}
+
+h2 {
+    color: #6a5acd;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.reflexion-bg {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+
+.shadow-text {
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.inicio-bg {
+    background-image: url('../img/ImagenMain.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ocupa toda la pantalla */
+}
+
